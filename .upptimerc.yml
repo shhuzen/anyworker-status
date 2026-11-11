@@ -18,6 +18,9 @@ sites:
   - name: Mail
     url: https://mail.anyworker.ai
     expectedStatusCodes: [200, 301, 302]
+  - name: Telegram test
+    url: https://anyworker.ai/healthz
+    expectedStatusCodes: [418]
 
 status-website:
   baseUrl: /anyworker-status
