@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Статус anyworker.ai</title>
+<style>html{background:#141218;color-scheme:dark}</style>
+<!--
+  GitHub Pages has no file for /history/<service>, so it used to answer 404 and
+  only then show the page. This file makes the address a real page (HTTP 200):
+  it loads the status app shell that Upptime builds and hands the page over to it.
+  One copy per service in .upptimerc.yml; add a copy when a service is added.
+-->
+<script>
+fetch("/anyworker-status/service-worker-index.html", { cache: "no-cache" })
+  .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+  .then(function (html) { document.open(); document.write(html); document.close(); })
+  .catch(function () { location.replace("/anyworker-status/"); });
+</script>
+</head>
+<body></body>
+</html>

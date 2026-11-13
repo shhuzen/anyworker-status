@@ -21,11 +21,91 @@ sites:
 
 status-website:
   baseUrl: /anyworker-status
-  name: anyworker.ai status
-  introTitle: "**anyworker.ai** service status"
-  introMessage: Checked every five minutes from GitHub. An outage opens an issue here and sends a Telegram message.
+  name: Статус anyworker.ai
+  logoUrl: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
+  faviconSvg: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
+  # The look lives in assets/theme.css (anyworker.ai colours and fonts)
+  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=1
+  links:
+    - rel: preconnect
+      href: https://fonts.gstatic.com
+    - rel: stylesheet
+      href: https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto:wght@400;500;700&display=swap
+  # A service page has no title of its own, the tab showed the bare address
+  js: "if(typeof document!=='undefined'&&!document.title)document.title='Статус anyworker.ai';"
+  introTitle: "Статус сервисов **anyworker.ai**"
+  introMessage: Проверяем каждые пять минут с серверов GitHub. Если сервис перестаёт отвечать, здесь появляется запись о сбое, а нам приходит сообщение в Telegram.
   navbar:
-    - title: Status
-      href: /
-    - title: anyworker.ai
+    - title: Все сервисы
+      # with baseUrl a bare "/" leads to shhuzen.github.io itself, which is not this site
+      href: /anyworker-status/
+    - title: Сайт
       href: https://anyworker.ai
+
+# Colours of the response-time chart on a service page
+graphBackgroundColor: "rgba(208, 188, 255, 0.18)"
+graphBorderColor: "#d0bcff"
+
+# Texts of the status page (and a few words in the README table)
+i18n:
+  locale: ru-RU
+  activeIncidents: Сбои сейчас
+  allSystemsOperational: Все сервисы работают
+  incidentReport: "Сбой №$NUMBER: подробности →"
+  activeIncidentSummary: Начался $DATE, сообщений — $POSTS
+  incidentTitle: Сбой №$NUMBER
+  incidentDetails: Подробности сбоя
+  incidentFixed: Исправлен
+  incidentOngoing: Продолжается
+  incidentOpenedAt: Начался
+  incidentClosedAt: Закончился
+  incidentViewOnGitHub: Открыть на GitHub и подписаться
+  incidentCommentSummary: "$DATE, $AUTHOR"
+  incidentBack: ← Все сбои
+  pastIncidents: Прошлые сбои
+  pastIncidentsResolved: Исправлен за $MINUTES мин, сообщений — $POSTS
+  liveStatus: Сервисы сейчас
+  overallUptime: "Доступность: $UPTIME"
+  overallUptimeTitle: Доступность за всё время
+  averageResponseTime: "Средний ответ: $TIME мс"
+  averageResponseTimeTitle: Средний ответ
+  sevelDayResponseTime: Время ответа за последние дни
+  responseTimeMs: Время ответа, мс
+  up: Работает
+  down: Не отвечает
+  degraded: Медленно
+  ms: " мс"
+  loading: Загружаем
+  navGitHub: GitHub
+  footer: Проверки и эта страница работают на [Upptime](https://upptime.js.org). [Исходники и журнал проверок]($REPO)
+  rateLimitExceededTitle: Слишком много запросов
+  rateLimitExceededIntro: С вашего адреса за час пришло больше запросов, чем разрешает GitHub. Подождите час или добавьте свой токен доступа GitHub.
+  rateLimitExceededWhatDoesErrorMean: Что это значит?
+  rateLimitExceededErrorMeaning: Страница берёт свежие данные о сервисах из GitHub. Без входа GitHub разрешает 60 запросов в час с одного адреса, и они закончились.
+  rateLimitExceededErrorHowCanFix: Что делать?
+  rateLimitExceededErrorFix: Через час лимит восстановится. Либо добавьте свой токен доступа GitHub — с ним разрешено 5000 запросов в час.
+  rateLimitExceededGeneratePAT: Как создать токен доступа
+  rateLimitExceededHasSet: Токен доступа сохранён.
+  rateLimitExceededRemoveToken: Убрать токен
+  rateLimitExceededGitHubPAT: Токен доступа GitHub
+  rateLimitExceededCopyPastePAT: Вставьте токен
+  rateLimitExceededSaveToken: Сохранить токен
+  errorTitle: Не получилось загрузить данные
+  errorIntro: Свежие данные о сервисах сейчас не загрузились.
+  errorText: Обновите страницу через минуту.
+  errorHome: На главную
+  pastScheduledMaintenance: Прошедшие плановые работы
+  scheduledMaintenance: Плановые работы
+  scheduledMaintenanceSummaryStarted: Начались $DATE, на $DURATION мин
+  scheduledMaintenanceSummaryStarts: Начнутся $DATE, на $DURATION мин
+  startedAt: Начались
+  startsAt: Начнутся
+  duration: Длительность
+  durationMin: $DURATION мин
+  incidentCompleted: Завершены
+  incidentScheduled: Запланированы
+  duration24H: 24 ч
+  duration7D: 7 дн
+  duration30D: 30 дн
+  duration1Y: год
+  durationAll: всё
