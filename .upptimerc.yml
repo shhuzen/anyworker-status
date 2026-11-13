@@ -25,7 +25,7 @@ status-website:
   logoUrl: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   faviconSvg: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   # The look lives in assets/theme.css (anyworker.ai colours and fonts)
-  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=2
+  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=3
   links:
     - rel: preconnect
       href: https://fonts.gstatic.com
@@ -66,7 +66,7 @@ i18n:
   pastIncidentsResolved: Исправлен за $MINUTES мин, сообщений — $POSTS
   liveStatus: Сервисы сейчас
   overallUptime: "Доступность: $UPTIME"
-  overallUptimeTitle: Доступность за всё время
+  overallUptimeTitle: Доступность
   averageResponseTime: "Средний ответ: $TIME мс"
   averageResponseTimeTitle: Средний ответ
   sevelDayResponseTime: Время ответа за последние дни

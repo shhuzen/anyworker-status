@@ -479,8 +479,23 @@ footer a:hover {
     padding: 0.5rem 0.7rem;
   }
 
+  /* Upptime lets the bar scroll sideways; with the name hidden it fits */
+  nav {
+    overflow: visible;
+  }
+
+  /* All five ranges on one line, full width */
+  .f > form.r {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
   form.r label {
-    padding: 0.4rem 0.65rem;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   .live-status article.graph::before {
