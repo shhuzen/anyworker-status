@@ -7,11 +7,15 @@
 # as plain files; assets/aw-api-cache.js makes the page read those instead.
 name: Status page data
 on:
-  # Offset from Upptime's own five-minute checks, and deliberately not run on
-  # pushes to history/: Upptime pushes several commits in a row there, and a
-  # commit of ours landing in between makes its job fail ("fetch first").
+  # Right after every Upptime check: that is when incidents open or close, and
+  # by then Upptime has finished pushing, so our commit cannot land in between
+  # its pushes and fail its job ("fetch first").
+  workflow_run:
+    workflows: ["Uptime CI"]
+    types: [completed]
+  # Fallback only: GitHub runs schedules in this repository hours apart.
   schedule:
-    - cron: "3-59/10 * * * *"
+    - cron: "17 * * * *"
   issues:
     types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
   workflow_dispatch:
