@@ -84,15 +84,17 @@ a:focus-visible,
 
 /* ── Top bar ─────────────────────────────────────────────── */
 
+/* Upptime's own nav rules carry a component class, so they outrank plain
+   selectors — hence the !important on spacing here. */
 nav {
-  margin-bottom: 2.75rem;
-  padding: 0;
-  font-weight: 400;
+  margin-bottom: 2.75rem !important;
+  padding: 0 !important;
+  font-weight: 400 !important;
 }
 
 nav .logo {
-  padding: 0.85rem 0;
-  margin-right: 1.5rem;
+  padding: 0.85rem 0 !important;
+  margin-right: 1.5rem !important;
   font-weight: 500;
   font-size: 1.05rem;
   letter-spacing: 0.005em;
@@ -111,7 +113,7 @@ nav ul {
 }
 
 nav ul a {
-  padding: 0.55rem 0.9rem;
+  padding: 0.55rem 0.9rem !important;
   border-radius: 999px;
   border-bottom: 0;
   font-size: 0.95rem;
@@ -464,11 +466,11 @@ footer a:hover {
   }
 
   nav {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.75rem !important;
   }
 
   nav .logo {
-    margin-right: 0.5rem;
+    margin-right: 0.5rem !important;
   }
 
   nav .logo div {
@@ -476,12 +478,12 @@ footer a:hover {
   }
 
   nav ul a {
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0.7rem !important;
   }
 
   /* Upptime lets the bar scroll sideways; with the name hidden it fits */
   nav {
-    overflow: visible;
+    overflow: visible !important;
   }
 
   /* All five ranges on one line, full width */
