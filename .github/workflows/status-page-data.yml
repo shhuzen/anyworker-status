@@ -1,0 +1,60 @@
+# Not part of the Upptime template — added by hand, Upptime does not rewrite it.
+#
+# The status page asks the GitHub API for incidents and response-time history
+# on every visit. Without a login GitHub allows 60 requests an hour per IP
+# address, so a few visits (or a shared VPN address) end on the
+# "rate limit exceeded" page. This job saves the same data into api-cache/
+# as plain files; assets/aw-api-cache.js makes the page read those instead.
+name: Status page data
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
+  push:
+    paths:
+      - "history/*.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: read
+concurrency:
+  group: status-page-data
+  cancel-in-progress: false
+jobs:
+  collect:
+    name: Save incidents and response times
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Collect
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p api-cache
+          issue='{number,title,state,created_at,closed_at,updated_at,comments,html_url,body,labels:[.labels[]|{name}],user:{login:.user.login,html_url:.user.html_url,avatar_url:.user.avatar_url}}'
+          for state in open closed; do
+            for label in status maintenance; do
+              gh api "repos/$GITHUB_REPOSITORY/issues?state=$state&labels=$label&per_page=100&sort=created&direction=desc"
+            done | jq -s "add | map(select(.pull_request | not)) | unique_by(.number) | sort_by(.created_at) | reverse | map($issue)" > "api-cache/issues-$state.json"
+          done
+          for file in history/*.yml; do
+            slug=$(basename "$file" .yml)
+            gh api "repos/$GITHUB_REPOSITORY/commits?path=history/$slug.yml&per_page=28" \
+              | jq --arg slug "$slug" '{($slug): [.[] | {sha, commit: {message: .commit.message, committer: {date: .commit.committer.date}}}]}'
+          done | jq -s 'add // {}' > api-cache/commits.json
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git add api-cache
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m ":card_file_box: Update status page data [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git pull -q --rebase && git push -q; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          exit 1
