@@ -14,7 +14,11 @@
 <script>
 fetch("/anyworker-status/service-worker-index.html", { cache: "no-cache" })
   .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
-  .then(function (html) { document.open(); document.write(html); document.close(); })
+  .then(function (html) {
+    // aw-api-cache.js has to run before the app's own code, see that file
+    html = html.replace("<head>", '<head><script src="/anyworker-status/aw-api-cache.js"><\/script>');
+    document.open(); document.write(html); document.close();
+  })
   .catch(function () { location.replace("/anyworker-status/"); });
 </script>
 </head>
