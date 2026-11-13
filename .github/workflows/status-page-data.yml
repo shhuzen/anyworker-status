@@ -7,13 +7,13 @@
 # as plain files; assets/aw-api-cache.js makes the page read those instead.
 name: Status page data
 on:
+  # Offset from Upptime's own five-minute checks, and deliberately not run on
+  # pushes to history/: Upptime pushes several commits in a row there, and a
+  # commit of ours landing in between makes its job fail ("fetch first").
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "3-59/10 * * * *"
   issues:
     types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
-  push:
-    paths:
-      - "history/*.yml"
   workflow_dispatch:
 permissions:
   contents: write
