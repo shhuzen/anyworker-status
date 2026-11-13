@@ -339,8 +339,7 @@ form.r input:checked + label {
 .live-status .data {
   padding: 0.05rem 0.3rem !important;
   border-radius: 6px !important;
-  font-family: var(--aw-pixel);
-  font-size: 0.92rem;
+  font-weight: 500;
   color: var(--aw-text);
   font-variant-numeric: tabular-nums;
 }
@@ -378,10 +377,8 @@ form.r input:checked + label {
   padding: 0.3rem 0.65rem;
   margin-left: 0.6rem;
   border-radius: 999px;
-  font-family: var(--aw-pixel);
   font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 0.03em;
+  font-weight: 500;
 }
 
 .tag.down,
@@ -415,8 +412,8 @@ dl dt {
 dl dd {
   margin: 0;
   padding: 0.15rem 1.25rem 1rem;
-  font-family: var(--aw-pixel);
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.25;
   color: var(--aw-text);
   font-variant-numeric: tabular-nums;
