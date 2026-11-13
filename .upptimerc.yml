@@ -25,7 +25,7 @@ status-website:
   logoUrl: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   faviconSvg: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   # The look lives in assets/theme.css (anyworker.ai colours and fonts)
-  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=1
+  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=2
   links:
     - rel: preconnect
       href: https://fonts.gstatic.com
