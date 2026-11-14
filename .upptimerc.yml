@@ -24,6 +24,8 @@ status-website:
   name: Статус anyworker.ai
   logoUrl: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   faviconSvg: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
+  # without it the page asks for /logo-192.png at shhuzen.github.io itself (404)
+  favicon: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   # The look lives in assets/theme.css (anyworker.ai colours and fonts)
   themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=4
   links:
