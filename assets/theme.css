@@ -82,6 +82,9 @@
 
 :root {
   --aw-pixel: "DotGothic16", "Roboto Mono", ui-monospace, monospace;
+  /* Words people read (the state, the period, the theme): DotGothic16 draws
+     Cyrillic full-width, «р а б о т а е т» read as spaced-out letters. */
+  --aw-label: "Roboto", system-ui, sans-serif;
   --aw-radius: 16px;
 
   /* What ui-sdk's stylesheet reads */
@@ -325,7 +328,7 @@ form.r label {
   margin: 0 !important;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  font-family: var(--aw-pixel);
+  font-family: var(--aw-label);
   font-size: 0.8rem;
   line-height: 1.3;
   color: var(--aw-muted);
@@ -389,10 +392,10 @@ form.r input:checked + label {
 
 /* The state in words — colour alone is not enough */
 .live-status h4::after {
-  font-family: var(--aw-pixel);
-  font-size: 0.78rem;
-  font-weight: 400;
-  letter-spacing: 0.03em;
+  font-family: var(--aw-label);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .live-status article.up h4::after {
@@ -622,7 +625,7 @@ footer a:hover {
   border: 0;
   border-radius: 999px;
   background: none;
-  font-family: var(--aw-pixel);
+  font-family: var(--aw-label);
   font-size: 0.8rem;
   line-height: 1.3;
   white-space: nowrap;
