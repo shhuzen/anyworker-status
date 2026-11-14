@@ -27,7 +27,7 @@ status-website:
   # without it the page asks for /logo-192.png at shhuzen.github.io itself (404)
   favicon: https://shhuzen.github.io/anyworker-status/anyworker-logo.svg
   # The look lives in assets/theme.css (anyworker.ai colours and fonts)
-  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=4
+  themeUrl: https://shhuzen.github.io/anyworker-status/theme.css?v=5
   links:
     - rel: preconnect
       href: https://fonts.gstatic.com
@@ -37,6 +37,8 @@ status-website:
   # (60 requests an hour per address) - see assets/aw-api-cache.js
   scripts:
     - src: https://shhuzen.github.io/anyworker-status/aw-api-cache.js
+    # Theme choice, ui-sdk controls, plain-language service lines - see the file
+    - src: https://shhuzen.github.io/anyworker-status/aw-ui.js
   # A service page has no title of its own, the tab showed the bare address
   js: "if(typeof document!=='undefined'&&!document.title)document.title='Статус anyworker.ai';"
   introTitle: "Статус сервисов **anyworker.ai**"
@@ -49,8 +51,9 @@ status-website:
       href: https://anyworker.ai
 
 # Colours of the response-time chart on a service page
-graphBackgroundColor: "rgba(208, 188, 255, 0.18)"
-graphBorderColor: "#d0bcff"
+# One violet for both themes: the chart is a canvas and cannot follow the theme
+graphBackgroundColor: "rgba(134, 114, 224, 0.18)"
+graphBorderColor: "#8672e0"
 
 # Texts of the status page (and a few words in the README table)
 i18n:
