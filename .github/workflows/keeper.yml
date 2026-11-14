@@ -1,0 +1,38 @@
+# Runs the uptime check every five minutes.
+#
+# GitHub delays scheduled workflows in this repository by hours: on 11–14.11.2026
+# «*/5 * * * *» in uptime.yml fired every 4–8 hours, while the page says «каждые
+# пять минут». This workflow stays alive for almost six hours (the job limit),
+# starts «Uptime CI» every five minutes, and at the end starts itself again.
+# A workflow_dispatch made with the workflow's own token is allowed to start
+# another run (the one exception GitHub makes), so no extra token is needed.
+# The hourly schedule only revives the loop if a run was lost; the concurrency
+# group keeps at most one loop running and one waiting.
+name: Uptime keeper
+on:
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: uptime-keeper
+  cancel-in-progress: false
+permissions:
+  actions: write
+  contents: read
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Start «Uptime CI» every five minutes
+        run: |
+          for i in $(seq 1 69); do
+            gh workflow run uptime.yml --ref master || echo "dispatch $i failed"
+            sleep 300
+          done
+      - name: Start the next loop
+        if: always()
+        run: gh workflow run keeper.yml --ref master
