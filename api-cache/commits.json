@@ -686,6 +686,15 @@
   ],
   "files-nextcloud": [
     {
+      "sha": "390d791faaca12366adcd7450d9cff2a83058974",
+      "commit": {
+        "message": "🟥 Files (Nextcloud) is down (503 in 1189 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-17T23:02:11Z"
+        }
+      }
+    },
+    {
       "sha": "73848f3bd0b635c36100a979ba43a342080e392a",
       "commit": {
         "message": "🟩 Files (Nextcloud) is up (200 in 1855 ms) [skip ci] [upptime]",
