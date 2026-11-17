@@ -94,18 +94,20 @@
     "url": "https://disk.anyworker.ai",
     "icon": "https://icons.duckduckgo.com/ip3/disk.anyworker.ai.ico",
     "slug": "files-nextcloud",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1930,
-    "timeDay": 1855,
-    "timeWeek": 1930,
-    "timeMonth": 1930,
-    "timeYear": 1930,
-    "dailyMinutesDown": {}
+    "time": 1884,
+    "timeDay": 1522,
+    "timeWeek": 1884,
+    "timeMonth": 1884,
+    "timeYear": 1884,
+    "dailyMinutesDown": {
+      "2026-11-17": 0
+    }
   },
   {
     "name": "Mail",
