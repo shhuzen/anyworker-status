@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "number": 3,
+    "title": "🛑 Files (Nextcloud) is down",
+    "state": "open",
+    "created_at": "2026-11-18T01:12:04Z",
+    "closed_at": null,
+    "updated_at": "2026-11-18T01:12:05Z",
+    "comments": 0,
+    "html_url": "https://github.com/shhuzen/anyworker-status/issues/3",
+    "body": "In [`06da8e2`](https://github.com/shhuzen/anyworker-status/commit/06da8e22ad8f06ef4d382c01faf660c2ef0d86ef\n), Files (Nextcloud) (https://disk.anyworker.ai) was **down**:\n- HTTP code: 0\n- Response time: 0 ms\n",
+    "labels": [
+      {
+        "name": "status"
+      },
+      {
+        "name": "files-nextcloud"
+      }
+    ],
+    "user": {
+      "login": "shhuzen",
+      "html_url": "https://github.com/shhuzen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126897529?v=4"
+    }
+  }
+]
