@@ -94,19 +94,19 @@
     "url": "https://disk.anyworker.ai",
     "icon": "https://icons.duckduckgo.com/ip3/disk.anyworker.ai.ico",
     "slug": "files-nextcloud",
-    "status": "up",
-    "uptime": "97.53%",
-    "uptimeDay": "82.14%",
-    "uptimeWeek": "97.45%",
-    "uptimeMonth": "97.53%",
-    "uptimeYear": "97.53%",
+    "status": "down",
+    "uptime": "94.43%",
+    "uptimeDay": "58.46%",
+    "uptimeWeek": "94.07%",
+    "uptimeMonth": "94.43%",
+    "uptimeYear": "94.43%",
     "time": 1884,
     "timeDay": 1654,
     "timeWeek": 1860,
     "timeMonth": 1884,
     "timeYear": 1884,
     "dailyMinutesDown": {
-      "2026-11-18": 257
+      "2026-11-18": 598
     }
   },
   {
@@ -115,18 +115,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/mail.anyworker.ai.ico",
     "slug": "mail",
     "status": "up",
-    "uptime": "97.58%",
-    "uptimeDay": "82.48%",
-    "uptimeWeek": "97.50%",
-    "uptimeMonth": "97.58%",
-    "uptimeYear": "97.58%",
+    "uptime": "94.48%",
+    "uptimeDay": "58.80%",
+    "uptimeWeek": "94.11%",
+    "uptimeMonth": "94.48%",
+    "uptimeYear": "94.48%",
     "time": 2163,
     "timeDay": 1922,
     "timeWeek": 2136,
     "timeMonth": 2163,
     "timeYear": 2163,
     "dailyMinutesDown": {
-      "2026-11-18": 252
+      "2026-11-18": 593
     }
   }
 ]
