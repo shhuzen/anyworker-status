@@ -1,5 +1,29 @@
 [
   {
+    "number": 8,
+    "title": "🛑 Deploy panel is down",
+    "state": "open",
+    "created_at": "2026-11-22T11:52:57Z",
+    "closed_at": null,
+    "updated_at": "2026-11-22T11:52:58Z",
+    "comments": 0,
+    "html_url": "https://github.com/shhuzen/anyworker-status/issues/8",
+    "body": "In [`b9b026a`](https://github.com/shhuzen/anyworker-status/commit/b9b026abbc2060c920f1cefe2c017aab994301d8\n), Deploy panel (https://admin.anyworker.ai) was **down**:\n- HTTP code: 0\n- Response time: 0 ms\n",
+    "labels": [
+      {
+        "name": "status"
+      },
+      {
+        "name": "deploy-panel"
+      }
+    ],
+    "user": {
+      "login": "shhuzen",
+      "html_url": "https://github.com/shhuzen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126897529?v=4"
+    }
+  },
+  {
     "number": 7,
     "title": "🛑 Files (Nextcloud) is down",
     "state": "open",
