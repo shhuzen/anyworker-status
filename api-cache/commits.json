@@ -1300,6 +1300,15 @@
   ],
   "mail": [
     {
+      "sha": "07f2ab83c9b017535f4903dcf50ab40808c6f718",
+      "commit": {
+        "message": "🟥 Mail is down (0 in 0 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-25T18:05:01Z"
+        }
+      }
+    },
+    {
       "sha": "6115ec9f136add1a060af965bb255b8ab31b29cf",
       "commit": {
         "message": "🟩 Mail is up (200 in 2057 ms) [skip ci] [upptime]",
