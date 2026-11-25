@@ -1,5 +1,29 @@
 [
   {
+    "number": 9,
+    "title": "🛑 Mail is down",
+    "state": "closed",
+    "created_at": "2026-11-25T18:05:01Z",
+    "closed_at": "2026-11-25T18:05:37Z",
+    "updated_at": "2026-11-25T18:05:38Z",
+    "comments": 1,
+    "html_url": "https://github.com/shhuzen/anyworker-status/issues/9",
+    "body": "In [`07f2ab8`](https://github.com/shhuzen/anyworker-status/commit/07f2ab83c9b017535f4903dcf50ab40808c6f718\n), Mail (https://mail.anyworker.ai) was **down**:\n- HTTP code: 0\n- Response time: 0 ms\n",
+    "labels": [
+      {
+        "name": "status"
+      },
+      {
+        "name": "mail"
+      }
+    ],
+    "user": {
+      "login": "shhuzen",
+      "html_url": "https://github.com/shhuzen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126897529?v=4"
+    }
+  },
+  {
     "number": 7,
     "title": "🛑 Files (Nextcloud) is down",
     "state": "closed",
