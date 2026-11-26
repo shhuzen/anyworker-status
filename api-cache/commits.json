@@ -1091,6 +1091,15 @@
   ],
   "files-nextcloud": [
     {
+      "sha": "b5492581b7dda1723eb477dc2ae7f6ff67af307d",
+      "commit": {
+        "message": "🟩 Files (Nextcloud) is up (200 in 1370 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-26T23:10:13Z"
+        }
+      }
+    },
+    {
       "sha": "a513403de34353a2a750242ee6be474b861eee78",
       "commit": {
         "message": "🟥 Files (Nextcloud) is down (503 in 1197 ms) [skip ci] [upptime]",
@@ -1330,15 +1339,6 @@
         "message": "🟩 Files (Nextcloud) is up (200 in 1770 ms) [skip ci] [upptime]",
         "committer": {
           "date": "2026-11-13T13:07:03Z"
-        }
-      }
-    },
-    {
-      "sha": "17a0e24473f5fcc866e5307c43179425c1f519b3",
-      "commit": {
-        "message": "🟩 Files (Nextcloud) is up (200 in 2136 ms) [skip ci] [upptime]",
-        "committer": {
-          "date": "2026-11-13T13:04:57Z"
         }
       }
     }
