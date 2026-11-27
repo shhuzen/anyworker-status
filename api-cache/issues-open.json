@@ -1,5 +1,29 @@
 [
   {
+    "number": 11,
+    "title": "🛑 Files (Nextcloud) is down",
+    "state": "open",
+    "created_at": "2026-11-27T11:07:47Z",
+    "closed_at": null,
+    "updated_at": "2026-11-27T11:07:48Z",
+    "comments": 0,
+    "html_url": "https://github.com/shhuzen/anyworker-status/issues/11",
+    "body": "In [`043431d`](https://github.com/shhuzen/anyworker-status/commit/043431ddd7ee2f9aaacceacc8ce07f3874ef3bc4\n), Files (Nextcloud) (https://disk.anyworker.ai) was **down**:\n- HTTP code: 0\n- Response time: 0 ms\n",
+    "labels": [
+      {
+        "name": "status"
+      },
+      {
+        "name": "files-nextcloud"
+      }
+    ],
+    "user": {
+      "login": "shhuzen",
+      "html_url": "https://github.com/shhuzen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126897529?v=4"
+    }
+  },
+  {
     "number": 8,
     "title": "🛑 Deploy panel is down",
     "state": "open",
