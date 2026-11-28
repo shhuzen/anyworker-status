@@ -1,6 +1,15 @@
 {
   "anyworker-ai": [
     {
+      "sha": "efdc73524965362b20cf989e9f9d6649e930fb51",
+      "commit": {
+        "message": "🟩 anyworker.ai is up (200 in 1595 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:15Z"
+        }
+      }
+    },
+    {
       "sha": "7201b2b209d4032103614f0adb07030234d17c83",
       "commit": {
         "message": "🟩 anyworker.ai is up (200 in 1490 ms) [skip ci] [upptime]",
@@ -227,6 +236,15 @@
     }
   ],
   "app-liveness": [
+    {
+      "sha": "ab8cba4368cc0248f97cc4db61bdf17cbb130e07",
+      "commit": {
+        "message": "🟩 App liveness is up (200 in 634 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:17Z"
+        }
+      }
+    },
     {
       "sha": "6e24b08a04b1b3f40aaf2276dd1a571e30c6fac9",
       "commit": {
@@ -455,6 +473,15 @@
   ],
   "app-readiness": [
     {
+      "sha": "9416a2d10ca6f0319cc04bff2a0c573f4979ec8c",
+      "commit": {
+        "message": "🟩 App readiness is up (200 in 647 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:16Z"
+        }
+      }
+    },
+    {
       "sha": "ddb4c2d6be2e0791581ed0691171f9a34d1d9bc7",
       "commit": {
         "message": "🟩 App readiness is up (200 in 543 ms) [skip ci] [upptime]",
@@ -681,6 +708,15 @@
     }
   ],
   "deploy-panel": [
+    {
+      "sha": "04e1ea1f228fe270e1c3107e84911340b7204d45",
+      "commit": {
+        "message": "🟩 Deploy panel is up (200 in 649 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:17Z"
+        }
+      }
+    },
     {
       "sha": "f98ae133cc3df096cbec0829cdd6915d7e4ccbdc",
       "commit": {
@@ -909,6 +945,15 @@
   ],
   "error-tracker": [
     {
+      "sha": "1d407b7b895ff3fbd30dbc0217dc68792e7e42f9",
+      "commit": {
+        "message": "🟩 Error tracker is up (200 in 963 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:18Z"
+        }
+      }
+    },
+    {
       "sha": "e7d329e8c6d568ee06526e133e92ce5c33987848",
       "commit": {
         "message": "🟩 Error tracker is up (200 in 809 ms) [skip ci] [upptime]",
@@ -1135,6 +1180,15 @@
     }
   ],
   "files-nextcloud": [
+    {
+      "sha": "8e5e7d7e90b7a69cf769de636ac9139532806577",
+      "commit": {
+        "message": "🟩 Files (Nextcloud) is up (200 in 1663 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:20Z"
+        }
+      }
+    },
     {
       "sha": "b9a63be121895ed7a6c18d8b83177418cee79a21",
       "commit": {
@@ -1377,18 +1431,18 @@
           "date": "2026-11-14T05:29:14Z"
         }
       }
-    },
-    {
-      "sha": "15f00a43427185f776db58fbb63dcb782bfdb0d6",
-      "commit": {
-        "message": "🟩 Files (Nextcloud) is up (200 in 1854 ms) [skip ci] [upptime]",
-        "committer": {
-          "date": "2026-11-14T02:54:17Z"
-        }
-      }
     }
   ],
   "mail": [
+    {
+      "sha": "0fbf461444a1d640f0ab4bec0456c7fe0382adb0",
+      "commit": {
+        "message": "🟩 Mail is up (200 in 1936 ms) [skip ci] [upptime]",
+        "committer": {
+          "date": "2026-11-28T04:30:22Z"
+        }
+      }
+    },
     {
       "sha": "3c142df71f2938b11b086e4c577d7201091f1ce7",
       "commit": {
@@ -1629,15 +1683,6 @@
         "message": "🟩 Mail is up (200 in 2279 ms) [skip ci] [upptime]",
         "committer": {
           "date": "2026-11-11T00:11:53Z"
-        }
-      }
-    },
-    {
-      "sha": "e668f72861791ef215902a837abc25226d11c725",
-      "commit": {
-        "message": "🟩 Mail is up (200 in 2181 ms) [skip ci] [upptime]",
-        "committer": {
-          "date": "2026-11-11T00:09:19Z"
         }
       }
     }
